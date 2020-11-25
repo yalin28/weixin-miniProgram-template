@@ -1,0 +1,62 @@
+/* 为元素添加 Retina 屏幕下的 1px 边框（即 hairline），基于伪类 transform 实现 */
+.border-1px,
+.border-1px--bottom,
+.border-1px--left,
+.border-1px--right,
+.border-1px--surround,
+.border-1px--top,
+.border-1px--top-bottom {
+  position: relative;
+}
+.border-1px--bottom:after,
+.border-1px--left:after,
+.border-1px--right:after,
+.border-1px--surround:after,
+.border-1px--top-bottom:after,
+.border-1px--top:after,
+.border-1px:after {
+  position: absolute;
+  box-sizing: border-box;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  content: ' ';
+  pointer-events: none;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  border: 0 solid var(--ddz_gray_e5);
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+}
+.border-1px--top:after {
+  border-top-width: 1px;
+}
+.border-1px--left:after {
+  border-left-width: 1px;
+}
+.border-1px--right:after {
+  border-right-width: 1px;
+}
+.border-1px--bottom:after {
+  border-bottom-width: 1px;
+}
+.border-1px--top-bottom:after {
+  border-width: 1px 0;
+}
+.border-1px--surround:after {
+  border-width: 1px;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

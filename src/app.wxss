@@ -1,0 +1,6 @@
+@import 'config.wxss';
+@import 'utils.wxss';
+
+view {
+  box-sizing: border-box;
+}

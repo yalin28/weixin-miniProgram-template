@@ -1,0 +1,33 @@
+.page {
+  padding: 40rpx;
+  background-color: #f7f8fa;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+.title {
+  color: #454b6499;
+  margin: 20rpx;
+  margin-left: 0;
+}
+.list {
+  margin-top: 20rpx;
+}
+.wrapper {
+  height: 400rpx;
+  width: 100%;
+  background: tomato;
+}
+.wrapper .inner {
+  height: 200rpx;
+  width: 50%;
+  background: turquoise;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .inner .inner-text {
+  color: #fff;
+}
+.wrapper .inner .inner-text.red {
+  color: red;
+}

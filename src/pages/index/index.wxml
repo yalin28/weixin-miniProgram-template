@@ -1,0 +1,16 @@
+<view class="page">
+  <view class="title">less样式</view>
+  <view class="wrapper flex-center">
+    <view class="inner flex-center">
+      <view class="inner-text">hello less</view>
+      <view class="inner-text red">hello less</view>
+    </view>
+  </view>
+  <view class="title">vant组件</view>
+  <van-button custom-class="request-button" type="default" disabled="{{disabled}}" loading="{{loading}}" loading-text="加载中..." bind:click="getList">
+    {{btnText}}
+  </van-button>
+  <view class="list">
+    <van-cell wx:for="{{list}}" wx:key="email" title="{{item.email}}" value="{{item.name.first}}" />
+  </view>
+</view>
