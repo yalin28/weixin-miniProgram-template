@@ -17,10 +17,6 @@ Page({
    */
   onLoad: function (options) {},
   getList() {
-    this.setData({
-      disabled: true,
-      loading: true,
-    })
     if (this.data.list.length > 0) {
       this.setData({
         disabled: false,
@@ -28,18 +24,26 @@ Page({
         btnText: '请求数据',
       })
     } else {
+      this.setData({
+        disabled: true,
+        loading: true,
+      })
       const requestData = {
         results: 10,
       }
-      getHomeList(requestData).then((res) => {
-        console.log(res)
-        this.setData({
-          disabled: false,
-          loading: false,
-          list: res.results,
-          btnText: '重置数据',
+      getHomeList(requestData)
+        .then((res) => {
+          console.log(res)
+          this.setData({
+            disabled: false,
+            loading: false,
+            list: res.results,
+            btnText: '重置数据',
+          })
         })
-      })
+        .catch((err) => {
+          console.log(err)
+        })
     }
   },
   /**

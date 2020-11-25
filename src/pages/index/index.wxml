@@ -11,6 +11,6 @@
     {{btnText}}
   </van-button>
   <view class="list">
-    <van-cell wx:for="{{list}}" wx:key="email" title="{{item.email}}" value="{{item.name.first}}" />
+    <van-cell wx:for="{{list}}" wx:key="email" title="{{item.name.first}}" value="{{item.name.last}}" />
   </view>
 </view>
