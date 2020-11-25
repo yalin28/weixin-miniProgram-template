@@ -12,7 +12,7 @@
 
 | 下载地址                                      | 版本说明                                            |
 | --------------------------------------------- | --------------------------------------------------- |
-| [👉🏻 点我](https://nodejs.org/zh-cn/download/) | [👉🏻 点我](https://nodejs.org/zh-cn/about/releases/) |
+| 👉[点我](https://nodejs.org/zh-cn/download/) | 👉[点我](https://nodejs.org/zh-cn/about/releases/) |
 
 2. Visual Studio Code
 
@@ -26,12 +26,12 @@
 
 1. 下载开发环境相关工具
 
-2. `Visual Studio Code` 下载所需插件
+2. 下载 Visual Studio Code 所需插件
 
    | 插件名      | 作用                      |
    | ----------- | ------------------------- |
-   | `ESLint`    | 用于 用于代码校验和格式化 |
-   | `Easy LESS` | 用于 `less` 转 `wxss`     |
+   | ESLint    | 用于 用于代码校验和格式化 |
+   | Easy LESS | 用于 `less` 转 `wxss`     |
 
 3. 在 `VS Code` 的 `settings.json` 中添加配置：
 
